@@ -1,10 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { TrendingUp, Users, Target, Award, ArrowRight, CheckCircle } from 'lucide-react';
+import Toast from './Toast';
 
 const HomePage = () => {
+  const [showToast, setShowToast] = React.useState(true);
+
+  const handleCloseToast = () => {
+    setShowToast(false);
+  };
+
   return (
     <main className="overflow-hidden">
+      <Toast
+        message="Hey Arno, this website created by AI using around 5 prompts. AI is outperforming you 👀"
+        onClose={handleCloseToast}
+        show={showToast}
+      />
+      
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-50 via-white to-purple-50 py-20 lg:py-32">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
