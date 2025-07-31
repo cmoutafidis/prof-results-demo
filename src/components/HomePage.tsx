@@ -13,7 +13,7 @@ const HomePage = () => {
   return (
     <main className="overflow-hidden">
       <Toast
-        message="Hey Arno — this is a meticulously transformed version of your website using AI, leveraging a bespoke digital presence to streamline your outdated landscape! AI’s opulent, comprehensive prowess is totally elevating and empowering our implementations, leaving you in the dust 👀"
+        message="Hey Arno — this website was meticulously transformed in just 5 minutes using AI, leveraging a bespoke digital presence to obliterate your old, ugly website! AI’s opulent, comprehensive prowess is totally elevating and empowering our implementations, leaving you in the dust 👀"
         onClose={handleCloseToast}
         show={showToast}
       />
